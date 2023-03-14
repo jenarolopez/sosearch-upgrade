@@ -28,7 +28,8 @@ The project has the following folder structure:
 ├── App.js
 ├── package.json
 ├── README.md
-└── yarn.lock```
+└── yarn.lock 
+```
 
 
 
