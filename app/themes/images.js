@@ -1,0 +1,267 @@
+import VersionNumber from 'react-native-version-number';
+
+const images = {
+	cameraIcon									: require('../images/ic_camera.png'),
+	masterCard									: require('../images/ic_master_card.png'),
+	payPal											: require('../images/ic_paypal.png'),
+	visaCard										: require('../images/ic_visa.png'),
+	muser												: require('../images/muser.png'),
+	flagIndonesia								: require('../images/flagIndonesia.png'),
+	flagMalasia									: require('../images/flagMalasia.png'),
+	flagPhilippines							: require('../images/flagPhilippines.png'),
+	flagSingapore								: require('../images/flagSingapore.png'),
+	flagThailand								: require('../images/flagThailand.png'),
+	flagVietNam									: require('../images/flagVietNam.png'),
+
+	// Temp Profile Picture
+	MY_PROFILE									: require('../images/jojoindick.png'),
+
+	// User Profile Picture
+	PROFILE_01									: require('../temp/profile/user01.png'),
+	PROFILE_02									: require('../temp/profile/user02.png'),
+	PROFILE_03									: require('../temp/profile/user03.png'),
+	PROFILE_04									: require('../temp/profile/user04.png'),
+	PROFILE_05									: require('../temp/profile/user05.png'),
+	PROFILE_06									: require('../temp/profile/user06.png'),
+	PROFILE_07									: require('../temp/profile/user07.png'),
+
+	// Chat User Profile Picture
+	CHAT_USER_01								: require('../temp/chat/user01.png'),
+	CHAT_USER_02								:	require('../temp/chat/user02.png'),
+	CHAT_USER_03								: require('../temp/chat/user03.png'),
+	CHAT_USER_04								: require('../temp/chat/user04.png'),
+	CHAT_USER_05								: require('../temp/chat/user05.png'),
+	CHAT_USER_06								: require('../temp/chat/user06.png'),
+	CHAT_USER_07								: require('../temp/chat/user07.png'),
+	CHAT_USER_08								: require('../temp/chat/user08.png'),
+	CHAT_USER_09								: require('../temp/chat/user09.png'),
+
+	// Logo
+	SOS_LOGO 										: require('../images/logo.png'),
+	SOS_TEXT_LOGO 							: require('../images/text_logo.png'),
+	SOS_TEXT_WHITE_LOGO 				: require('../images/text_logo_white.png'),
+
+	// Registration
+	WELCOME_BACKGROUND					: require('../images/welcome_background.png'),
+	WELCOME_BACKGROUND_01					: require('../images/welcome_background01.png'),
+	REGISTER_STOP								: require('../images/register_stop.png'),
+	CARD_VISA_MASTERCARD				: require('../images/visa&mastercard.png'),
+	CARD_AMER_EXPRESS						: require('../images/americanexpress.png'),
+	REFERRAL_CODE_ICON					: require('../images/referral_code_icon.png'),
+	COUPLE_HEART								: require('../images/couple_heart.png'),
+	GENDER_FEMALE								: require('../images/gender_female.png'),
+	GENDER_MALE									: require('../images/gender_male.png'),
+	GENDER_FEMALE_SELECTED			: require('../images/gender_female_selected.png'),
+	GENDER_MALE_SELECTED				: require('../images/gender_male_selected.png'),
+	CONFIRMATION_CHECK					: require('../images/confirmation-check.png'),
+	CONFIRMATION_CONFETTI				: require('../images/confirmation_confetti.png'),
+	CONFIRMATION_HANDSHAKE			: require('../images/confirmation_handshake.png'),
+	CONFIRMATION_HOURGLASS			: require('../images/confirmation_hourglass.png'),
+	CHECK												: require('../images/check.png'),
+	PaymentSuccess 							: require('../images/Hand_holding_phone.png'),		
+	MAGNIFYING_GLASS						: require('../images/magnifying_glass.png'),
+
+	NO_USER_PROFILE							: require('../images/no_user.png'),
+
+	// Sign-in
+	SIGN_IN_BACKGROUND 					:require('../images/sign_in_background.png'),
+
+	// Unsubscribe
+	SMARTPHONE_WITH_SAD_FACE		:require('../images/smartphone_with_sad_face.png'),
+	SAD_FACE										:require('../images/sad_face.png'),
+
+	// Shortlist
+	NO_SHORTLIST 								: require('../images/heart-sharp.png'),
+
+	// Home
+	POPPER 											: require('../images/popper.png'),
+
+	// No Records/Items
+	NO_BLOCKED_USERS						: require('../images/no_blocked_users.png'),
+	NO_CHATS										: require('../images/no_chats.png'),
+	NO_CALLS										: require('../images/no_calls.png'),
+	NO_CALENDAR_EVENTS					: require('../images/no_events.png'),
+	NO_HISTORY									: require('../images/no_history.png'),
+	NO_INVITATIONS							: require('../images/no_invitations.png'),
+	NO_NETWORK_CONN							: require('../images/no_network_conn.png'),
+	NO_NOTIFICATIONS						: require('../images/no_notifications.png'),
+	NO_USERS_FOUND							: require('../images/no_users_found.png'),
+	NO_USERS_LIKED_ME						: require('../images/no_user_liked_me.png'),
+	NO_USERS_NEAR_ME						: require('../images/no_users_near_me.png'),
+	NO_USERS_VIEWED_ME					: require('../images/no_user_viewed_me.png'),
+	NO_PHOTOS										: require('../images/no_photos.png'),
+
+	// Communication Icons
+	CHAT_INACTIVE								: require('../images/chat_ina.png'),
+	CHAT_SENT										: require('../images/chat_sen.png'),
+	CHAT_RECEIVED								: require('../images/chat_rec.png'),
+	CHAT_ACTIVE									: require('../images/chat_act.png'),
+
+	PHONE_INACTIVE							: require('../images/phone_ina.png'),
+	PHONE_SENT									: require('../images/phone_sen.png'),
+	PHONE_RECEIVED							: require('../images/phone_rec.png'),
+	PHONE_ACTIVE								: require('../images/phone_act.png'),
+
+	VIDEO_INACTIVE							: require('../images/video_ina.png'),
+	VIDEO_SENT									: require('../images/video_sen.png'),
+	VIDEO_RECEIVED							: require('../images/video_rec.png'),
+	VIDEO_ACTIVE								: require('../images/video_act.png'),
+
+	// Rewards
+	REFER_A_FRIEND							: require('../images/refer_a_friend.png'),
+	REFERRED_BY_A_FRIEND			  : require('../images/referred_by_a_friend.png'),
+
+	//Block User
+	BROKEN_CHAIN							  :require('../images/broken_chain.png'),
+
+  // TUTORIAL_NEAR_ME_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-1-0.png`,
+  // TUTORIAL_NEAR_ME_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-2-0.png`,
+  // TUTORIAL_NEAR_ME_2_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-2-1.png`,
+  // TUTORIAL_NEAR_ME_2_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-2-2.png`,
+  // TUTORIAL_NEAR_ME_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-3-0.png`,
+  // TUTORIAL_NEAR_ME_3_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-3-1.png`,
+  // TUTORIAL_NEAR_ME_3_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-3-2.png`,
+  // TUTORIAL_NEAR_ME_3_3				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-3-3.png`,
+  // TUTORIAL_NEAR_ME_3_4				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-near-me-3-4.png`,
+  //
+  // TUTORIAL_SHORTLIST_1_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-1-0.png`,
+  // TUTORIAL_SHORTLIST_2_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-2-0.png`,
+  // TUTORIAL_SHORTLIST_2_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-2-1.png`,
+  // TUTORIAL_SHORTLIST_3_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-3-0.png`,
+  // TUTORIAL_SHORTLIST_3_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-3-1.png`,
+  // TUTORIAL_SHORTLIST_3_2			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-3-2.png`,
+  // TUTORIAL_SHORTLIST_4_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-4-0.png`,
+  // TUTORIAL_SHORTLIST_4_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-4-1.png`,
+  // TUTORIAL_SHORTLIST_5_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-5-0.png`,
+  // TUTORIAL_SHORTLIST_6_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-shortlist-6-0.png`,
+  //
+  // TUTORIAL_SEARCH_1_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-1-0.png`,
+  // TUTORIAL_SEARCH_2_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-2-0.png`,
+  // TUTORIAL_SEARCH_3_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-3-0.png`,
+  // TUTORIAL_SEARCH_4_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-4-0.png`,
+  // TUTORIAL_SEARCH_4_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-4-1.png`,
+  // TUTORIAL_SEARCH_5_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-5-0.png`,
+  // TUTORIAL_SEARCH_5_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-5-1.png`,
+  // TUTORIAL_SEARCH_6_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-6-0.png`,
+  // TUTORIAL_SEARCH_6_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-6-1.png`,
+  // TUTORIAL_SEARCH_7_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-7-0.png`,
+  // TUTORIAL_SEARCH_7_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-7-1.png`,
+  // TUTORIAL_SEARCH_8_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-8-0.png`,
+  // TUTORIAL_SEARCH_8_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-search-8-1.png`,
+  //
+  // TUTORIAL_MESSAGE_CENTER_1_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-1-0.png`,
+  // TUTORIAL_MESSAGE_CENTER_2_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-2-0.png`,
+  // TUTORIAL_MESSAGE_CENTER_4_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-4-0.png`,
+  // TUTORIAL_MESSAGE_CENTER_5_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-5-0.png`,
+  // TUTORIAL_MESSAGE_CENTER_6_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-6-0.png`,
+  // TUTORIAL_MESSAGE_CENTER_7_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-contact-7-0.png`,
+  //
+  // TUTORIAL_CALENDAR_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-1-0.png`,
+  // TUTORIAL_CALENDAR_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-2-0.png`,
+  // TUTORIAL_CALENDAR_2_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-2-1.png`,
+  // TUTORIAL_CALENDAR_2_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-2-2.png`,
+  // TUTORIAL_CALENDAR_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-3-0.png`,
+  // TUTORIAL_CALENDAR_4_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-4-0.png`,
+  // TUTORIAL_CALENDAR_5_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-5-0.png`,
+  // TUTORIAL_CALENDAR_5_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-5-1.png`,
+  // TUTORIAL_CALENDAR_6_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-6-0.png`,
+  // TUTORIAL_CALENDAR_6_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-6-1.png`,
+  // TUTORIAL_CALENDAR_7_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-calendar-7-0.png`,
+  //
+  // TUTORIAL_VIEWS_1_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-views-1-0.png`,
+  // TUTORIAL_VIEWS_2_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-views-2-0.png`,
+  // TUTORIAL_VIEWS_3_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-views-3-0.png`,
+  // TUTORIAL_VIEWS_4_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-views-4-0.png`,
+  //
+  // TUTORIAL_PROFILE_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-1-0.png`,
+  // TUTORIAL_PROFILE_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-2-0.png`,
+  // TUTORIAL_PROFILE_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-3-0.png`,
+  // TUTORIAL_PROFILE_4_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-4-0.png`,
+  // TUTORIAL_PROFILE_5_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-5-0.png`,
+  // TUTORIAL_PROFILE_6_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-6-0.png`,
+  // TUTORIAL_PROFILE_7_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-7-0.png`,
+  // TUTORIAL_PROFILE_8_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-8-0.png`,
+  // TUTORIAL_PROFILE_9_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-9-0.png`,
+  // TUTORIAL_PROFILE_10_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-10-0.png`,
+  // TUTORIAL_PROFILE_11_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-11-0.png`,
+  // TUTORIAL_PROFILE_12_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v${VersionNumber.appVersion}/tutorial-user-profile-12-0.png`
+
+	// Tutorial			
+	TUTORIAL_NEAR_ME_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-1-0.png`,
+	TUTORIAL_NEAR_ME_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-2-0.png`,
+	TUTORIAL_NEAR_ME_2_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-2-1.png`,
+	TUTORIAL_NEAR_ME_2_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-2-2.png`,
+	TUTORIAL_NEAR_ME_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-3-0.png`,
+	TUTORIAL_NEAR_ME_3_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-3-1.png`,
+	TUTORIAL_NEAR_ME_3_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-3-2.png`,
+	TUTORIAL_NEAR_ME_3_3				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-3-3.png`,
+	TUTORIAL_NEAR_ME_3_4				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-near-me-3-4.png`,
+
+	TUTORIAL_SHORTLIST_1_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-1-0.png`,
+	TUTORIAL_SHORTLIST_2_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-2-0.png`,
+	TUTORIAL_SHORTLIST_2_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-2-1.png`,
+	TUTORIAL_SHORTLIST_3_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-3-0.png`,
+	TUTORIAL_SHORTLIST_3_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-3-1.png`,
+	TUTORIAL_SHORTLIST_3_2			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-3-2.png`,
+	TUTORIAL_SHORTLIST_4_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-4-0.png`,
+	TUTORIAL_SHORTLIST_4_1			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-4-1.png`,
+	TUTORIAL_SHORTLIST_5_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-5-0.png`,
+	TUTORIAL_SHORTLIST_6_0			: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-shortlist-6-0.png`,
+
+	TUTORIAL_SEARCH_1_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-1-0.png`,
+	TUTORIAL_SEARCH_2_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-2-0.png`,
+	TUTORIAL_SEARCH_3_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-3-0.png`,
+	TUTORIAL_SEARCH_4_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-4-0.png`,
+	TUTORIAL_SEARCH_4_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-4-1.png`,
+	TUTORIAL_SEARCH_5_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-5-0.png`,
+	TUTORIAL_SEARCH_5_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-5-1.png`,
+	TUTORIAL_SEARCH_6_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-6-0.png`,
+	TUTORIAL_SEARCH_6_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-6-1.png`,
+	TUTORIAL_SEARCH_7_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-7-0.png`,
+	TUTORIAL_SEARCH_7_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-7-1.png`,
+	TUTORIAL_SEARCH_8_0					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-8-0.png`,
+	TUTORIAL_SEARCH_8_1					: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-search-8-1.png`,
+
+	TUTORIAL_MESSAGE_CENTER_1_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-1-0.png`,
+	TUTORIAL_MESSAGE_CENTER_2_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-2-0.png`,
+	TUTORIAL_MESSAGE_CENTER_4_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-4-0.png`,
+	TUTORIAL_MESSAGE_CENTER_5_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-5-0.png`,
+	TUTORIAL_MESSAGE_CENTER_6_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-6-0.png`,
+	TUTORIAL_MESSAGE_CENTER_7_0	: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-contact-7-0.png`,
+
+	TUTORIAL_CALENDAR_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-1-0.png`,
+	TUTORIAL_CALENDAR_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-2-0.png`,
+	TUTORIAL_CALENDAR_2_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-2-1.png`,
+	TUTORIAL_CALENDAR_2_2				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-2-2.png`,
+	TUTORIAL_CALENDAR_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-3-0.png`,
+	TUTORIAL_CALENDAR_4_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-4-0.png`,
+	TUTORIAL_CALENDAR_5_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-5-0.png`,
+	TUTORIAL_CALENDAR_5_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-5-1.png`,
+	TUTORIAL_CALENDAR_6_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-6-0.png`,
+	TUTORIAL_CALENDAR_6_1				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-6-1.png`,
+	TUTORIAL_CALENDAR_7_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-calendar-7-0.png`,
+	TUTORIAL_CALENDAR_4_1				: require('../images/tutorial_calendar.png'),
+
+	TUTORIAL_VIEWS_1_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-views-1-0.png`,
+	TUTORIAL_VIEWS_2_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-views-2-0.png`,
+	TUTORIAL_VIEWS_3_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-views-3-0.png`,
+	TUTORIAL_VIEWS_4_0		: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-views-4-0.png`,
+	TUTORIAL_VIEWS_1_1		: require('../images/tutorial_views.png'),
+
+	TUTORIAL_PROFILE_1_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-1-0.png`,
+	TUTORIAL_PROFILE_2_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-2-0.png`,
+	TUTORIAL_PROFILE_3_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-3-0.png`,
+	TUTORIAL_PROFILE_4_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-4-0.png`,
+	TUTORIAL_PROFILE_5_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-5-0.png`,
+	TUTORIAL_PROFILE_6_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-6-0.png`,
+	TUTORIAL_PROFILE_7_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-7-0.png`,
+	TUTORIAL_PROFILE_8_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-8-0.png`,
+	TUTORIAL_PROFILE_9_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-9-0.png`,
+	TUTORIAL_PROFILE_10_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-10-0.png`,
+	TUTORIAL_PROFILE_11_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-11-0.png`,
+	TUTORIAL_PROFILE_12_0				: `https://s3-us-west-2.amazonaws.com/sos.dev.files/sos-mobile/Tutorial/v2.3.10/tutorial-user-profile-12-0.png`,
+	TUTORIAL_PROFILE_13_0				: require('../images/tutorial_profile.png'),
+
+};
+
+export default images;
