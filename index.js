@@ -12,7 +12,7 @@
 import React from 'react';
 
 import { AppRegistry } from 'react-native';
-import { createStore, applyMiddleware, compose } from 'redux';
+import { legacy_createStore as createStore, applyMiddleware, compose } from 'redux';
 import { persistStore, persistReducer, createTransform } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux';
@@ -21,7 +21,7 @@ import createSagaMiddleware from 'redux-saga';
 import Flatted from 'flatted';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// import App from './app/containers/App';
+import App from './app/containers/App';
 
 import rootReducer from './app/redux/reducers'
 import rootSaga from './app/redux/sagas';
@@ -79,7 +79,7 @@ sagaMiddleware.run(rootSaga);
 const AppSOS = () => (
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      {/* <App /> */}
+      <App />
     </PersistGate>
   </Provider>
 )
